@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProdiTIDataSet2" targetNamespace="http://tempuri.org/ProdiTIDataSet2.xsd" xmlns:mstns="http://tempuri.org/ProdiTIDataSet2.xsd" xmlns="http://tempuri.org/ProdiTIDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProdiTIConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProdiTIConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Exercise2.Properties.Settings.GlobalReference.Default.ProdiTIConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NilaiTableAdapter" GeneratorDataComponentClassName="NilaiTableAdapter" Name="Nilai" UserDataComponentName="NilaiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProdiTIConnectionString (Settings)" DbObjectName="ProdiTI.Kuliah.Nilai" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NIM, KodeMK, Nilai, IDPeriode FROM Kuliah.Nilai</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NIM" DataSetColumn="NIM" />
+              <Mapping SourceColumn="KodeMK" DataSetColumn="KodeMK" />
+              <Mapping SourceColumn="Nilai" DataSetColumn="Nilai" />
+              <Mapping SourceColumn="IDPeriode" DataSetColumn="IDPeriode" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProdiTIDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="ProdiTIDataSet2" msprop:Generator_DataSetName="ProdiTIDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Nilai" msprop:Generator_RowEvHandlerName="NilaiRowChangeEventHandler" msprop:Generator_RowDeletedName="NilaiRowDeleted" msprop:Generator_RowDeletingName="NilaiRowDeleting" msprop:Generator_RowEvArgName="NilaiRowChangeEvent" msprop:Generator_TablePropName="Nilai" msprop:Generator_RowChangedName="NilaiRowChanged" msprop:Generator_RowChangingName="NilaiRowChanging" msprop:Generator_TableClassName="NilaiDataTable" msprop:Generator_RowClassName="NilaiRow" msprop:Generator_TableVarName="tableNilai" msprop:Generator_UserTableName="Nilai">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NIM" msprop:Generator_ColumnPropNameInRow="NIM" msprop:Generator_ColumnPropNameInTable="NIMColumn" msprop:Generator_ColumnVarNameInTable="columnNIM" msprop:Generator_UserColumnName="NIM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KodeMK" msprop:Generator_ColumnPropNameInRow="KodeMK" msprop:Generator_ColumnPropNameInTable="KodeMKColumn" msprop:Generator_ColumnVarNameInTable="columnKodeMK" msprop:Generator_UserColumnName="KodeMK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nilai" msprop:Generator_ColumnPropNameInRow="Nilai" msprop:Generator_ColumnPropNameInTable="NilaiColumn" msprop:Generator_ColumnVarNameInTable="columnNilai" msprop:Generator_UserColumnName="Nilai" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IDPeriode" msprop:Generator_ColumnPropNameInRow="IDPeriode" msprop:Generator_ColumnPropNameInTable="IDPeriodeColumn" msprop:Generator_ColumnVarNameInTable="columnIDPeriode" msprop:Generator_UserColumnName="IDPeriode" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
