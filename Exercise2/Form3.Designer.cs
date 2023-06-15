@@ -306,6 +306,7 @@
             this.Controls.Add(this.bindingNavigator1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.Text = "Teknologi Informasi UMY";
             this.Load += new System.EventHandler(this.Form3_Load);

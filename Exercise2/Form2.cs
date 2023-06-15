@@ -33,7 +33,9 @@ namespace Exercise2
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            Form4 form4 = new Form4();
+            form4.Show();
+            this.Hide();
         }
     }
 }
