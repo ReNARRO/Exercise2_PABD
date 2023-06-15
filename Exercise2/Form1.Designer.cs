@@ -56,11 +56,12 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Perpetua Titling MT", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Maroon;
             this.textBox1.Location = new System.Drawing.Point(207, 25);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(328, 40);
+            this.textBox1.Size = new System.Drawing.Size(328, 33);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Menu Utama";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

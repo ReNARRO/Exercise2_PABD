@@ -35,5 +35,10 @@ namespace Exercise2
             this.nilaiTableAdapter.Fill(this.prodiTIDataSet1.Nilai);
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
